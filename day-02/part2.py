@@ -19,11 +19,7 @@ def main():
                 if all(numstr[digit:digit + letters] == numstr[0:letters] for digit in range(0, len(numstr), letters))  and len(numstr) > letters:
                     total += i
                     break    
-            # firsthalf = str(i)[: len(str(i)) // 2]
-            # secondhalf = str(i)[len(str(i)) // 2 :]
-            # print(firsthalf, secondhalf)
-            # if firsthalf == secondhalf:
-            #     total += i
+
     print(total)
 
 
