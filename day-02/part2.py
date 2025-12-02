@@ -3,11 +3,12 @@ def main():
         lines = f.readlines()
     total = 0
     numbers = lines[0].split(",")
+    maxlen = findLargestLen()
     for num in numbers:
 
         num1 = int(num.strip().split("-")[0])
         num2 = int(num.strip().split("-")[1])
-        maxlen = findLargestLen()
+        
         for i in range(num1, num2 + 1):
             numstr = str(i)
             if len(numstr) == 1:
